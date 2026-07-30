@@ -1,0 +1,6 @@
+#hero_image{
+    background-image: url(../Images/Homepageheroimage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
