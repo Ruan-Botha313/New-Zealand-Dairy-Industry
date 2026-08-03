@@ -1,16 +1,45 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: #9ae7ff;
+    margin: 0px;
+    text-align: center;
+}
+.h1home{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    padding-top: 200px;
+}
+.h1subpage{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+}
+
 #hero_image{
     background-image: url(../Images/Homepageheroimage.jpg);
     background-size: cover;
-    background-position: center;
-    height: 200px;
+    background-position: bottom;
+    height: 500px;   
 }
+
+#hero_image2{
+    background-image: url(../Images/MilkWithSunflower.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
 .two-column1{
     margin: auto;
     margin-top: 40px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 50px;
-    width: 80%
+    width: 100%;
+    background-color: #55d7ff
 }
 .two-column2{
     margin: auto;
@@ -33,6 +62,7 @@
 
 img{
     width: 100%;
+    padding: 20px;
 }
 
 .logo{
@@ -46,4 +76,26 @@ img{
 #infoblock4{
     background-image: url(../Images/CowPicture1.jpg);
     width: 100%;
+}
+main{
+    padding-bottom: 20px;
+}
+footer{
+    background-color:rgba(0, 0, 163, 0.781);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+nav{
+    background-color: #2b64ff
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    padding: 15px 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.image{
+    padding-right: 100px;
 }
