@@ -1,7 +1,6 @@
 *{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 body{
     background-color: #9ae7ff;
     margin: 0px;
@@ -17,24 +16,22 @@ body{
     color: rgb(0, 0, 0);
     padding-top: 100px;
 }
-
 #hero_image{
     background-image: url(../Images/Homepageheroimage.jpg);
     background-size: cover;
     background-position: bottom;
     height: 500px;   
 }
-
 #hero_image2{
     background-image: url(../Images/MilkWithSunflower.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
 }
-
 .two-column1{
     margin: auto;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 50px;
@@ -59,12 +56,37 @@ body{
     gap: 50px;
     width: 80%
 }
-
+.three-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width: 80%;
+    margin: 100px auto;
+}
+.card{
+    background-color: rgb(0, 0, 180);
+    border: 0px rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    padding: 0px;
+    height:385px
+}
+.card p{
+    font-size: 0px;
+    background-color:#4cd5ff;
+    transition: transform 0.5s, font-size 0.5s;
+}
+.card h2{
+    transition: transform 0.5s;
+}
+.card img{
+    width: 100%;
+    object-fit:cover;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
 img{
     width: 100%;
-    padding: 20px;
 }
-
 .logo{
     width:10%
 }
@@ -96,6 +118,29 @@ nav a{
     color: #ffffff;
     font-weight: bold;
 }
+nav a:hover{
+    background-color: #0011ac
+}
 .image{
     padding-right: 100px;
+    transition: transform 0.5s, border 0.5s, background-color 0.5s, font-size 60.0s;
+}
+.image:hover{
+    transform:scale(1.2,1.2);
+}
+
+
+.card:hover{
+    height:385px
+}
+.card:hover img{
+    transform:translateY(-110px) scale(1.0,0.3);
+}
+.card:hover h2{
+    transform:translateY(-240px)
+}
+
+.card:hover p{
+    font-size:20px;
+    transform:translateY(-240px)
 }
