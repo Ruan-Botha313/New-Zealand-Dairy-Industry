@@ -1,3 +1,8 @@
+::selection {
+  background: #000000; /* Background color of the selection box */
+  color: #ffffff;      /* Color of the selected text */
+}
+
 *{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -52,7 +57,11 @@ body{
     gap: 50px;
     width: 100%;
 }
-
+.info{
+    font-size: 1.25em;
+    margin: 0px 20px;
+    padding: 0px 20px
+}
 .two-column3{
     text-align: center;
     margin: auto;
@@ -70,7 +79,7 @@ body{
     height: 500px;
 }
 .card{
-    background-color: rgb(0, 0, 180);
+    background-color: #2b64ff;
     border: 0px rgb(0, 0, 0) solid;
     border-radius: 20px;
     padding: 0px;
@@ -81,7 +90,8 @@ body{
     font-size: 0px;
     background-color:#4cd5ff;
     border-radius: 20px;
-    transition: transform 0.5s, font-size 0.5s;
+    opacity: 0.0;
+    transition: transform 0.5s, font-size 0.5s, opacity 1s;
 }
 .card h2{
     transition: transform 0.5s;
@@ -95,32 +105,51 @@ body{
 }
 img{
     width: 100%;
+    border-radius: 20px;
 }
 .logo{
     width:10%
 }
+.nounder{
+    text-decoration:none;
+}
 
 #infoblock3{
-    background-image: url(../Images/CowPicture1.jpg);
+    background-image: url(../Images/IceCreamSoGood.jpg);
     background-size:cover;
     width: 80%;
     height:25vw;
     margin:auto;
+    margin-top: 20px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    border:#0011ac solid 0.1px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.5s, border 0.5s;
 }
 #infoblock4{
-    background-image: url(../Images/CowPicture1.jpg);
+    background-image: url(../Images//MilkTank.jpg);
     background-size:cover;
     width: 80%;
     height:25vw;
     margin:auto;
+    margin-top: 20px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    border:#0011ac solid 0.1px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.5s, border 0.5s;
 }
 .infoblockimg{
     margin-top:40px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-main{
+.infoblocktext{
+    background-color: rgba(113, 227, 255, 0.644);
 }
 footer{
-    background-color:rgba(0, 0, 163, 0.781);
+    background-color:#2b64ff;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -153,11 +182,10 @@ nav a:hover{
 .card:hover img{
     height: 100px;
 }
-.card:hover h2{
-}
 
 .card:hover p{
     font-size:20px;
+    opacity: 1;
 }
 
 .bg1{
@@ -170,4 +198,17 @@ nav a:hover{
 
 .bg3{
     background-color: #55d7ff
+}
+#infoblock3:hover{
+    transform:scale(1.05,1.05);
+    border:#0011ac solid 10px;
+}
+
+#infoblock4:hover{
+    transform:scale(1.05,1.05);
+    border:#0011ac solid 10px;
+}
+
+.wh{
+    color:white;
 }
