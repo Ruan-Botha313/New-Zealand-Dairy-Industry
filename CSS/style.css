@@ -141,9 +141,10 @@ img{
     transition: transform 0.5s, border 0.5s;
 }
 .infoblockimg{
-    margin-top:40px;
+    margin-top:60px;
     padding-left: 25px;
     padding-right: 25px;
+    border-radius: 20px;
 }
 .infoblocktext{
     background-color: rgba(113, 227, 255, 0.644);
@@ -211,4 +212,8 @@ nav a:hover{
 
 .wh{
     color:white;
+}
+
+.info:hover{
+    background-color: #80a2ff7c;
 }
