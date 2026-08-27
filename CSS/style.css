@@ -1,6 +1,6 @@
 ::selection {
-  background: #000000; /* Background color of the selection box */
-  color: #ffffff;      /* Color of the selected text */
+    background-color: #000000;      /* Background color of the selection box */
+    color: #fffdfd;      /* Color of the selected text */
 }
 
 *{
@@ -19,7 +19,7 @@ body{
 .h1subpage{
     font-size: 60px;
     color: rgb(0, 0, 0);
-    padding-top: 100px;
+    padding-top: 200px;
 }
 #hero_image{
     background-image: url(../Images/Homepageheroimage.jpg);
@@ -95,6 +95,7 @@ body{
 }
 .card h2{
     transition: transform 0.5s;
+    color: white;
 }
 .card img{
     height: 80%;
@@ -151,6 +152,7 @@ img{
 }
 footer{
     background-color:#2b64ff;
+    color: white;
     padding-top: 50px;
     padding-bottom: 50px;
 }
